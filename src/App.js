@@ -5,7 +5,7 @@ import store from './store/store';
 
 import Header from './components/common/Header';
 import Footer from './components/common/Footer';
-import HomePage from './pages/HomePage';
+import HomePage from './pages/homePage';
 import Booking from './pages/Booking';
 import AdminPanel from './components/cms/AdminPanel';
 import Login from './pages/Login';
