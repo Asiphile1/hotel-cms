@@ -1,70 +1,116 @@
-# Getting Started with Create React App
+# LE' BEL MOR - Hotel CMS
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
+LE' BEL MOR CMS is an admin panel designed to manage hotel accommodations, bookings, and user data efficiently. Built with **React**, **Redux**, and **Firebase**, the CMS provides a seamless way to control the hotel's content, update listings, manage reservations, and handle user interactions.
 
+## Table of Contents
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Getting Started](#getting-started)
+- [Project Structure](#project-structure)
+- [Available Scripts](#available-scripts)
+- [Contributing](#contributing)
+- [License](#license)
+
+---
+
+## Features
+✅ **Admin Authentication**: Secure login for administrators via Firebase Authentication.  
+✅ **Accommodation Management**: Add, edit, and delete hotel accommodations.  
+✅ **Booking Management**: View, update, and cancel user reservations.  
+✅ **User Management**: View and manage registered users.  
+✅ **Dashboard Analytics**: Overview of total bookings, revenue, and occupancy rates.  
+✅ **Responsive Design**: Optimized for mobile, tablet, and desktop use.  
+
+---
+
+## Technologies Used
+
+### **Frontend**
+- **React**: JavaScript library for building UI components.
+- **Redux**: State management for efficient data flow.
+- **React Router**: Handles navigation and routing.
+- **Material-UI (MUI)**: Provides modern UI components.
+- **Axios**: HTTP client for API communication.
+- **Firebase Authentication**: Secures user authentication.
+- **Firebase Firestore**: Stores and manages hotel data.
+- **React Hook Form**: Simplifies form handling and validation.
+
+### **Backend**
+- **Firebase Functions**: Handles backend logic (if used).
+
+### **Tools & Libraries**
+- **npm**: Package manager for dependencies.
+- **Webpack**: Module bundler for optimized builds.
+- **Babel**: JavaScript compiler.
+- **ESLint & Prettier**: Ensures code consistency.
+
+---
+
+## Getting Started
+
+### **Prerequisites**
+Ensure you have the following installed:
+- **Node.js** (version 14 or higher)
+- **npm** (version 6 or higher)
+
+### **Installation**
+
+#### 1. Clone the repository:
+```sh
+git clone https://github.com/Asiphile1/Hotel-CMS.git
+cd Hotel-CMS
+```
+## 2. Install dependencies:
+```sh
+
+npm install
+```
+Some key dependencies:
+
+```sh
+
+npm install react redux react-redux react-router-dom @mui/material axios firebase react-hook-form
+```
+## 3. Set up Firebase:
+* Create a Firebase project at Firebase Console.
+
+* Enable Authentication and Firestore Database.
+
+* Create a .env file in the root directory and add:
+
+```env
+
+REACT_APP_API_KEY=your_api_key
+REACT_APP_AUTH_DOMAIN=your_auth_domain
+REACT_APP_PROJECT_ID=your_project_id
+REACT_APP_STORAGE_BUCKET=your_storage_bucket
+REACT_APP_MESSAGING_SENDER_ID=your_messaging_sender_id
+REACT_APP_APP_ID=your_app_id
+```
+## 4. Start the development server:
+```sh
+
+npm start
+```
+The CMS should now be running at http://localhost:3000.
+
+## Project Structure
+```bash
+
+/src
+  ├── components/          # Reusable UI components
+  ├── pages/               # Main pages (Dashboard, Users, Bookings)
+  ├── redux/               # State management files
+  ├── utils/               # Helper functions
+  ├── App.js               # Main app entry point
+  ├── index.js             # Renders the application
+```
 ## Available Scripts
+* npm start - Runs the development server.
 
-In the project directory, you can run:
+* npm run build - Builds the app for production.
 
-### `npm start`
+* npm test - Runs tests.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* npm run lint - Lints the code.
